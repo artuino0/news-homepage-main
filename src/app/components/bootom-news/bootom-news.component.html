@@ -1,0 +1,5 @@
+<div class="wrapper">
+  <div class="new-card" *ngFor="let new of news; let i = index">
+    <app-bootom-card [new]="new" [numberNew]="i"></app-bootom-card>
+  </div>
+</div>

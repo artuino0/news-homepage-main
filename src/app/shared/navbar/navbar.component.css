@@ -1,0 +1,96 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 64px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  list-style: none;
+}
+
+.menu > li {
+  cursor: pointer;
+  margin-left: 40px;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+.menu > li:hover {
+  color: var(--ligth-vermillon);
+}
+
+.menu-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  width: 0px;
+}
+
+.menu-mobile-open {
+  position: fixed;
+  width: calc(100vw + 2px);
+  top: 0;
+  left: 0px;
+  z-index: 99;
+  background: rgba(0, 0, 26, 0.5);
+  height: 100vh;
+}
+
+.menu-content {
+  background-color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+  width: 256px;
+  right: 0;
+  height: 100vh;
+  padding: 27px 21px;
+}
+
+.close {
+  text-align: right;
+}
+
+.menu-list {
+  margin-top: 86px;
+}
+
+.menu-list {
+  list-style: none;
+}
+
+.menu-list > li {
+  margin-bottom: 24px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (max-width: 376px) {
+  .navbar {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .menu {
+    visibility: hidden;
+    width: 0px;
+  }
+
+  .menu-mobile {
+    justify-content: right;
+    width: 100%;
+    visibility: visible;
+  }
+}

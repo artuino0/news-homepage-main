@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <img [src]="'assets/images/' + new.image" alt="" width="100px" />
+  <div class="new-content">
+    <span class="new-number">{{ "0" + (numberNew + 1) }}</span>
+    <br />
+    <span class="new-title">{{ new.title }}</span>
+    <br />
+    <span class="new-text">
+      {{ new.text }}
+    </span>
+  </div>
+</div>

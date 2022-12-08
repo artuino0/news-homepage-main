@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: inter;
+  src: url("assets/fonts/inter.ttf") format("opentype");
+}
+
+:root {
+  --ligth-vermillon: rgba(241, 93, 81, 1);
+  --dark-space-blue: #00001a;
+  --yellow: rgba(233, 170, 82, 1);
+  --almost-white: rgba(255, 253, 250, 1);
+  --silver: rgba(197, 198, 206, 1);
+}
+
+body {
+  font-family: inter;
+  margin: 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

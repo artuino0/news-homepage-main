@@ -1,0 +1,38 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 24px;
+}
+
+.new-number {
+  color: var(--silver);
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+span {
+  display: inline-block;
+}
+.new-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 9px;
+  transition: all 0.2s ease;
+}
+
+.new-title:hover {
+  color: var(--ligth-vermillon);
+  cursor: pointer;
+}
+
+.new-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+}

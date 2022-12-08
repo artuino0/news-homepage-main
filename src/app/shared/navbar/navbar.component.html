@@ -1,0 +1,32 @@
+<div class="navbar">
+  <div class="logo"><img src="assets/images/logo.svg" alt="" /></div>
+  <div class="menu">
+    <li>Home</li>
+    <li>New</li>
+    <li>Popular</li>
+    <li>Trending</li>
+    <li>Categories</li>
+  </div>
+  <div class="menu-mobile">
+    <img src="assets/images/icon-menu.svg" alt="" (click)="toogleMenu()" />
+  </div>
+</div>
+
+<div class="menu-mobile-open" *ngIf="isOpen">
+  <div class="menu-content">
+    <div class="close">
+      <img
+        src="assets/images/icon-menu-close.svg"
+        alt=""
+        (click)="toogleMenu()"
+      />
+    </div>
+    <div class="menu-list">
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.wrapper {
+  margin-top: 71px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 376px) {
+  .wrapper {
+    margin-top: 64px;
+    grid-template-columns: 1fr;
+  }
+}
